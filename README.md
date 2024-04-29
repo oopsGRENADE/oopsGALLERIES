@@ -1,2 +1,2 @@
 # oopsGALLERIES
-https://oopsgrenade.github.io/oopsGALLERIES/
+https://oopsgrenade.github.io/oopsGALLERIES/index.html
