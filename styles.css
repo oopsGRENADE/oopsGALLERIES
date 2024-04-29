@@ -121,7 +121,7 @@ nav a:hover {
 }
 .footer a:hover {
     text-decoration: none;
-    text-shadow: 0px 4px 4px rgba(35,63,67,.6);
+    text-shadow: 0px 4px 4px rgba(35,63,67,.6); /* Adds a shadow that eases away */
     transition: text-shadow 1s ease;
 }
 
@@ -141,7 +141,7 @@ table {
 }
 
 
-th, td {
+th, td { /* table border and other data designs */
     border: 1px solid #000;
     text-align: center;
     padding: 10px;
@@ -150,16 +150,16 @@ th, td {
 }
 
 th:first-child {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Chnages the first th */
     color: #000;
   }
 
-  th:nth-child(2) {
+  th:nth-child(2) { /* Changes the second th */
     background-color: yellow;
     color: #000;
   }
 
-  th:nth-child(3) {
+  th:nth-child(3) { /* Changes the third th */
     background-color: red;
     color: #000;
   }
@@ -177,16 +177,16 @@ ul {
 /*################ Gallery Images Format ################*/
 /*#######################################################*/
 .galleryGrid {
-    max-width: 1200px;
+    max-width: 1200px; /* Sets the width */
     margin: 20px auto;
-    padding: 20px;
+    padding: 20px; /* Adds a roundness around the images */
     text-align: center;
 }
 .gallery {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
+    margin-top: 10px; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* makes it so the images are formatted properly when the page shrinks */
+    grid-gap: 20px; 
 }
 .gallery img {
     width: 100%;
