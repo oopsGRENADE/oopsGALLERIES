@@ -32,24 +32,61 @@
     </nav>
 
     <!-- Gallery sectioned off to display each image -->
-    <div class="galleryGrid">
-        <h1>Gallery</h1>
         <div class="gallery">
-            <div>
-                <img src="test_image1.jpg" alt="Image 1">
+            <div class ="image">
+                <img src="test_image1.jpg" alt="My take on a mermaid, a fish-head on the body of a woman." onclick="openModal('test_image1.jpg')">
                 <div class="caption">Mermaid</div>
             </div>
-            <div>
-                <img src="test_image3.jpg" alt="Image 1">
+
+            <div class ="image">
+                <img src="test_image3.jpg" alt="Various designs of humanoid shrimp." onclick="openModal('test_image3.jpg')">
                 <div class="caption">Shrimp</div>
             </div>
-            <div>
-                <img src="test_image4.jpg" alt="Image 1">
+
+            <div class ="image">
+                <img src="test_image4.jpg" alt="Various designs of humanoid crab species." onclick="openModal('test_image4.jpg')">
                 <div class="caption">Crabs</div>
             </div>
+
+            <div class ="image">
+                <img src="test_image2.jpg" alt="Sniper from TF2" onclick="openModal('test_image2.jpg')">
+                <div class="caption">Badlands</div>
+            </div>
+
+            <div class ="image">
+                <img src="test_image5.jpg" alt="Demoman from TF2 wearing a Zoot suit" onclick="openModal('test_image5.jpg')">
+                <div class="caption">Zoot Suit</div>
+            </div>
+
             <!-- Add more images -->
-        </div>
-    </div>
+        </div> <!-- End of Gallery -->
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span> <!-- x is used to close the modal -->
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+    //Passing the image into openModal()
+    function openModal(imageSrc) {
+        //Get the modal
+        var modal = document.getElementById("myModal");
+
+        //Get the image and insert it into the modal
+        var modalImg = document.getElementById("modalImage");
+
+        //Display as block
+        modal.style.display = "block";
+        //sets as the parameter
+        modalImg.src = imageSrc;
+        }
+    
+    function closeModal() {
+        //Get the modal
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+        }
+</script>
 
     <!-- Footer Seciton -->
     <footer class="footer">
