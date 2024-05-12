@@ -34,12 +34,50 @@
     <!-- Contact information will be here -->
     <article class="article">
         <p>Hey, if you are wanting to contact me use this page to send me a message!</p>
+        <p>Filling out the form below will send a direct message to me that I can read and respond to later!</p>
     </article>
+
+    <form id="webForm" action="#">
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <label for="timeZone">Select your Time Zone:</label><br>
+            <select id="timeZone" name="timeZone">
+                <option value="EST">East Standard Time</option>
+                <option value="CST">Central Standard Time</option>
+                <option value="MST">Mountain Standard Time</option>
+                <option value="PST">Pacific Standard Time</option>
+                <option value="DST">Daylight Saving Time</option>
+            </select><br><br>
+
+            <label for="subChoice">Subscribe for updates:</label>
+            <input type="radio" name="subChoice" value="Yes"/> Yes
+            <input type="radio" name="subChoice" value="No"/> No
+        
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p><div id="output"></div></p>
+
+    <script src="script.js"></script>
 
     <table>
         <tr>
             <td>Email</td>
-            <td>20mateonoring@gmail.com</td>
+            <td>fellabruh@gmail.com</td>
         </tr>
         <tr>
             <td>Phone</td>
@@ -62,5 +100,6 @@
     <div>&copy; 2024 Explosion Inc. All rights reserved.</div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
