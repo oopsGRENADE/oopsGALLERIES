@@ -382,9 +382,22 @@ input[type="submit"] {
     color: #000;
 }
 
-        
+/*#######################################################*/
+/*################### Invintation Page ##################*/
+/*#######################################################*/
 
-/*###############################################*/    
+#placeholderContent {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    color: #000;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
 
                 
 
