@@ -5,99 +5,100 @@
      want to display on my website, it will act as depository for my 
      images."-->
 
-<!DOCTYPE html>
-<html>
-  <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EXPLOSIVE NEWS</title>
-        <link type="text/css" rel="stylesheet" href="styles.css"/> 
-  </head>
-
-  <body>
-    <header class="header">
-        <img class="logo" src="logo.png" alt="Logo">
-        <h1>Web Page Development</h1>
-    </header>
-
-     <!-- Navigation Bar -->
-     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutMe.html">About Me</a></li>
-            <li><a href="myInterests.html">My Interests</a></li>
-            <li><a href="Gallery.html">Gallery</a></li>
-            <li><a href="contactMe.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Gallery sectioned off to display each image -->
-        <div class="gallery">
-            <div class ="image">
-                <img src="test_image1.jpg" alt="My take on a mermaid, a fish-head on the body of a woman." onclick="openModal('test_image1.jpg')">
-                <div class="caption">Mermaid</div>
-            </div>
-
-            <div class ="image">
-                <img src="test_image3.jpg" alt="Various designs of humanoid shrimp." onclick="openModal('test_image3.jpg')">
-                <div class="caption">Shrimp</div>
-            </div>
-
-            <div class ="image">
-                <img src="test_image4.jpg" alt="Various designs of humanoid crab species." onclick="openModal('test_image4.jpg')">
-                <div class="caption">Crabs</div>
-            </div>
-
-            <div class ="image">
-                <img src="test_image2.jpg" alt="Sniper from TF2" onclick="openModal('test_image2.jpg')">
-                <div class="caption">Badlands</div>
-            </div>
-
-            <div class ="image">
-                <img src="test_image5.jpg" alt="Demoman from TF2 wearing a Zoot suit" onclick="openModal('test_image5.jpg')">
-                <div class="caption">Zoot Suit</div>
-            </div>
-
-            <!-- Add more images -->
-        </div> <!-- End of Gallery -->
-
-<div id="myModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span> <!-- x is used to close the modal -->
-  <img class="modal-content" id="modalImage">
-</div>
-
-<script>
-    //Passing the image into openModal()
-    function openModal(imageSrc) {
-        //Get the modal
-        var modal = document.getElementById("myModal");
-
-        //Get the image and insert it into the modal
-        var modalImg = document.getElementById("modalImage");
-
-        //Display as block
-        modal.style.display = "block";
-        //sets as the parameter
-        modalImg.src = imageSrc;
-        }
-    
-    function closeModal() {
-        //Get the modal
-        var modal = document.getElementById("myModal");
-        modal.style.display = "none";
-        }
-</script>
-
-    <!-- Footer Seciton -->
-    <footer class="footer">
-    <div>
-        <a href="aboutMe.html">About Me</a>
-        <a href="myInterests.html">My Interests</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="contactMe.html">Contact Me</a>
-    </div> 
-    <div>&copy; 2024 Explosion Inc. All rights reserved.</div>
-    </footer>
-
-</body>
-</html>
+     <!DOCTYPE html>
+     <html>
+       <head>
+             <meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <title>EXPLOSIVE NEWS</title>
+             <link type="text/css" rel="stylesheet" href="styles.css"/> 
+       </head>
+     
+       <body>
+         <header class="header">
+             <img class="logo" src="logo.png" alt="Logo">
+             <h1>Web Page Development</h1>
+         </header>
+     
+          <!-- Navigation Bar -->
+          <nav>
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="aboutMe.html">About Me</a></li>
+                 <li><a href="myInterests.html">My Interests</a></li>
+                 <li><a href="Gallery.html">Gallery</a></li>
+                 <li><a href="contactMe.html">Contact</a></li>
+                 <li><a href="invitation.html">Invitation</a></li>
+             </ul>
+         </nav>
+     
+         <!-- Gallery sectioned off to display each image -->
+             <div class="gallery">
+                 <div class ="image">
+                     <img src="media/test_image1.jpg" alt="My take on a mermaid, a fish-head on the body of a woman." onclick="openModal('test_image1.jpg')">
+                     <div class="caption">Mermaid</div>
+                 </div>
+     
+                 <div class ="image">
+                     <img src="media/test_image3.jpg" alt="Various designs of humanoid shrimp." onclick="openModal('test_image3.jpg')">
+                     <div class="caption">Shrimp</div>
+                 </div>
+     
+                 <div class ="image">
+                     <img src="media/test_image4.jpg" alt="Various designs of humanoid crab species." onclick="openModal('test_image4.jpg')">
+                     <div class="caption">Crabs</div>
+                 </div>
+     
+                 <div class ="image">
+                     <img src="media/test_image2.jpg" alt="Sniper from TF2" onclick="openModal('media/test_image2.jpg')">
+                     <div class="caption">Badlands</div>
+                 </div>
+     
+                 <div class ="image">
+                     <img src="media/test_image5.jpg" alt="Demoman from TF2 wearing a Zoot suit" onclick="openModal('test_image5.jpg')">
+                     <div class="caption">Zoot Suit</div>
+                 </div>
+     
+                 <!-- Add more images -->
+             </div> <!-- End of Gallery -->
+     
+     <div id="myModal" class="modal">
+       <span class="close" onclick="closeModal()">&times;</span> <!-- x is used to close the modal -->
+       <img class="modal-content" id="modalImage">
+     </div>
+     
+     <script>
+         //Passing the image into openModal()
+         function openModal(imageSrc) {
+             //Get the modal
+             var modal = document.getElementById("myModal");
+     
+             //Get the image and insert it into the modal
+             var modalImg = document.getElementById("modalImage");
+     
+             //Display as block
+             modal.style.display = "block";
+             //sets as the parameter
+             modalImg.src = imageSrc;
+             }
+         
+         function closeModal() {
+             //Get the modal
+             var modal = document.getElementById("myModal");
+             modal.style.display = "none";
+             }
+     </script>
+     
+         <!-- Footer Seciton -->
+         <footer class="footer">
+         <div>
+             <a href="aboutMe.html">About Me</a>
+             <a href="myInterests.html">My Interests</a>
+             <a href="Gallery.html">Gallery</a>
+             <a href="contactMe.html">Contact Me</a>
+         </div> 
+         <div>&copy; 2024 Explosion Inc. All rights reserved.</div>
+         </footer>
+     
+     </body>
+     </html>
