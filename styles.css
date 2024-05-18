@@ -312,11 +312,11 @@ th:first-child {
 body.contactMePage { /* specific body for this page */
     font-family:  Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(to right red, yellow);
-    font-weight: bold;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    
 }
 
 form {
@@ -387,12 +387,11 @@ input[type="submit"] {
 /*#######################################################*/
 
 #placeholderContent {
-    background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
     color: #000;
     font-family:  Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
